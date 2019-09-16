@@ -24,6 +24,9 @@ namespace MasterDevs.ChromeDevTools
         private WebSocket _webSocket;
         private static object _Lock = new object();
 
+        public event Action<string> UnknownMessageReceived;
+        public event Action<byte[]> UnknownDataReceived;
+
         public ChromeSession(string endpoint, ICommandFactory commandFactory, ICommandResponseFactory responseFactory, IEventFactory eventFactory)
         {
             _endpoint = endpoint;
@@ -235,7 +238,7 @@ namespace MasterDevs.ChromeDevTools
                 HandleEvent(evnt);
                 return;
             }
-            throw new Exception("Don't know what to do with response: " + e.Data);
+            UnknownDataReceived?.Invoke(e.Data);
         }
 
         private void WebSocket_Error(object sender, SuperSocket.ClientEngine.ErrorEventArgs e)
@@ -257,7 +260,7 @@ namespace MasterDevs.ChromeDevTools
                 HandleEvent(evnt);
                 return;
             }
-            throw new Exception("Don't know what to do with response: " + e.Message);
+            UnknownMessageReceived?.Invoke(e.Message);
         }
 
         private void WebSocket_Opened(object sender, EventArgs e)

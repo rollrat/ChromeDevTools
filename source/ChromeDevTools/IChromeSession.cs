@@ -15,5 +15,8 @@ namespace MasterDevs.ChromeDevTools
         Task<ICommandResponse> SendAsync<T>(CancellationToken cancellationToken);
 
         void Subscribe<T>(Action<T> handler) where T : class;
+
+        event Action<string> UnknownMessageReceived;
+        event Action<byte[]> UnknownDataReceived;
     }
 }

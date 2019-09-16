@@ -1,13 +1,13 @@
 <?xml version="1.0"?>
 <package >
   <metadata>
-    <id>$id$</id>
+    <id>MasterDevs.ChromeDevTools.KevReed</id>
     <version>$version$</version>
     <title>$title$</title>
     <authors>$author$</authors>
     <owners>$author$</owners>
-    <projectUrl>https://github.com/MasterDevs/ChromeDevTools</projectUrl>
-    <licenseUrl>https://github.com/MasterDevs/ChromeDevTools/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/KevReed/ChromeDevTools</projectUrl>
+    <licenseUrl>https://github.com/KevReed/ChromeDevTools/blob/master/LICENSE</licenseUrl>
     <iconUrl>http://masterdevs.com/images/FavIcon_144.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>$description$</description>
