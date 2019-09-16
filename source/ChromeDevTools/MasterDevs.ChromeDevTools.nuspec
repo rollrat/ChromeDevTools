@@ -4,7 +4,7 @@
     <id>MasterDevs.ChromeDevTools.KevReed</id>
     <version>$version$</version>
     <title>$title$</title>
-    <authors>$author$</authors>
+    <authors>$author$; Kev Reed</authors>
     <owners>$author$</owners>
     <projectUrl>https://github.com/KevReed/ChromeDevTools</projectUrl>
     <licenseUrl>https://github.com/KevReed/ChromeDevTools/blob/master/LICENSE</licenseUrl>
