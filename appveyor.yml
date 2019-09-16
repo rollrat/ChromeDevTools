@@ -76,3 +76,12 @@ build:
 artifacts:
 - path: '*.nupkg'
 - path: 'source\ChromeDevTools\bin\Release\*.nupkg'
+build:
+  verbosity: minimal
+deploy:
+- provider: NuGet
+  api_key:
+    secure: j3Zna787jeBkvK0OvAugl8HhSvc4hrNC5A9xTBTrx2kmARoQ5suSv0jTfrFdLCps
+  artifact: MasterDevs.ChromeDevTools.KevReed.1.1.7.nupkg
+  on:
+    branch: master
