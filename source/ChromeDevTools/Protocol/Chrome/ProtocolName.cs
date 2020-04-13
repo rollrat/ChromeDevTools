@@ -355,6 +355,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.Chrome
 			public const string Enable = "DOM.enable";
 			public const string Disable = "DOM.disable";
 			public const string GetDocument = "DOM.getDocument";
+			public const string GetNodeStackTraces = "DOM.getNodeStackTraces";
 			public const string GetFlattenedDocument = "DOM.getFlattenedDocument";
 			public const string CollectClassNamesFromSubtree = "DOM.collectClassNamesFromSubtree";
 			public const string RequestChildNodes = "DOM.requestChildNodes";
